@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "global.css";
+
+body header .else{
+    display: none;
+}
+
+div[role= "alert"]{
+    border-color: hsl(0 84.2% 60.2% / 1);
+    color: hsl(0 84.2% 60.2% / 1);
+    width: 347px;
+    position: absolute;
+    top: -77px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+nav{
+    display: none;
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../public/auth/man.png");
+    background-size: cover;
+    background-position-x: -355px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login form{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--formColor);
+    border: 1px solid white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    right: 87px;
+    min-width: 445px;
+}
+
+.login h1{
+    font-size: 37px;
+    margin-bottom: 23px;
+    text-align: center;
+
+}
+.login .fourtyTwo{
+    display: flex;
+    background-color: transparent;
+    border: 1px solid var(--authColor);
+    color: var(--authColor);
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    gap: 7px;
+    transition: 0.3s;
+    width: 237px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+.login .fourtyTwo:hover{
+    background-color: var(--authColor);
+    color: white;
+}
+
+.login .or{
+    display: flex;
+    justify-content: center;
+}
+
+.login button{
+    background-color: var(--buttonColor);
+    color: black;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.login .closure{
+    position: absolute;
+    bottom: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 262px;
+}
+
+.login .closure a{
+   color: var(--authColor);
+}
+
+.login .closure a:hover{
+   text-decoration: underline;
+}
+
+/* Medium Screens Start*/
+@media (width < 1200px) {
+    .login form{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 31%;
+    }
+    .login{
+        background-image: none;
+    }
+}
+/* Medium Screens End*/
+
+/* Small Screens Start*/
+
+@media (width < 500px) {
+    .login form{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 11%;
+        min-width: 310px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .login{
+        background-image: none;
+    }
+    .login form h1{
+        font-size: 30px;
+    }
+}
+
+/* Small Screens End*/
+
+/* Small Height Screens Start*/
+
+@media (height <= 800px) {
+    .login form{
+    }
+    .login{
+        background-position-x: -281px;
+    }
+    .login form h1{
+    }
+}
+@media (width < 1200px) and (height < 800px) {
+    .login form{
+        top: 12%;
+    }
+}
+/* Small Height End*/

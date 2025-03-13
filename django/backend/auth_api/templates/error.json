@@ -1,0 +1,7 @@
+{
+    "status" : 401,
+    "error" :{
+        "detail"  : "blacklisted token",
+        "redirect" : "{{ base_url }}/api/auth/login/"
+    }
+}

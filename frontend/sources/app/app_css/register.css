@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "global.css";
+
+div[role= "alert"]{
+    border-color: hsl(0 84.2% 60.2% / 1);
+    color: hsl(0 84.2% 60.2% / 1);
+    width: 347px;
+    position: absolute;
+    top: -77px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+body header .else{
+    /* display: none; */
+}
+
+nav{
+    display: none;
+}
+.register{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../public/auth/woman.png");
+    background-size: cover;
+    background-position-x: -555px;
+    background-repeat: no-repeat;
+}
+
+.register form{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--formColor);
+    border: 1px solid white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    right: 87px;
+    min-width: 445px;
+}
+
+.register form h1{
+    font-size: 37px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+
+.register button{
+    background-color: var(--buttonColor);
+    color: black;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.register .closure{
+    position: absolute;
+    bottom: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 262px;
+}
+
+.register .closure a{
+   color: var(--authColor);
+}
+
+.register .closure a:hover{
+   text-decoration: underline;
+}
+
+/* Medium Screens Start*/
+@media (width < 1200px) {
+    .register form{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 31%;
+    }
+    .register{
+        background-image: none;
+    }
+}
+/* Medium Screens End*/
+
+/* Small Screens Start*/
+
+@media (width < 500px) {
+    .register form{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 11%;
+        min-width: 310px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .register{
+        background-image: none;
+    }
+    .register form h1{
+        font-size: 30px;
+    }
+}
+
+/* Small Screens End*/
+
+/* Small Height Screens Start*/
+
+@media (height <= 800px) {
+    .register{
+        background-position-x: -281px;
+    }
+    .register form h1{
+    }
+}
+
+@media (width < 1200px) and (height < 800px) {
+        .register form{
+            top: 3%;
+        }
+}
+/* Small Height End*/

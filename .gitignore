@@ -1,0 +1,6 @@
+#move it to home or desktop
+.venv
+
+.env
+#ignore all windows powershell files
+*.ps1

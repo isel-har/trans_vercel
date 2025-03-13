@@ -1,0 +1,59 @@
+version: '3.8'
+
+networks:
+  network:
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    env_file:
+      - .env
+    networks:
+      - network
+    restart: always
+
+  django:
+    build: ./django
+    image: django:backend
+    container_name: django
+    volumes:
+      - media:/django/media
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+    networks:
+      - network
+    depends_on:
+      - postgres
+    restart: always
+
+  next:
+    build: ./frontend
+    image: next:frontend
+    container_name: next
+    networks:
+      - network
+    env_file:
+      - .env
+    depends_on:
+      - django
+    restart: always
+
+  nginx:
+    build: ./nginx
+    image: nginx:backend
+    container_name: nginx
+    volumes:
+      - media:/media
+    networks:
+      - network
+    ports:
+      -  8443:443
+    depends_on:
+      - next
+    restart: always
+
+volumes:
+  media:

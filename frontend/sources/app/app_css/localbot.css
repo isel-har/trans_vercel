@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Neue Plak';
+  src: url('/fonts/neue-plak/Neue Plak Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+.score {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  font-size: 28px;
+  font-family: "CourierSANSBold";
+  /* font-family: "CourierRegular"; */
+  /* margin-top: 50px; */
+  margin-bottom: 0;
+  color: rgb(255, 255, 255);
+  font-feature-settings: 'frac' 1;
+}
+
+canvas {
+  border-radius: 25px;
+  /* border: none; */
+  /* border: 3px solid #ffffff; */
+  /* padding: 0px; */
+  
+}
+/* make the canvas responsive on small screens */
+
+@media (max-width: 1000px) {
+  canvas {
+    width: 90%;
+  }
+}
+
+.board-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.board-selector h2 {
+  margin: 0 0 20px 0;
+  font-size: 2rem;
+  font-family: 'Neue Plak', sans-serif;
+  color: #ffffff;
+}
+
+.board-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.board-option {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 160px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.board-option:hover {
+  transform: scale(1.05);
+}
+
+.board-option.selected {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .board-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board-option {
+    width: 250px;
+    height: 105px;
+  }
+}
+

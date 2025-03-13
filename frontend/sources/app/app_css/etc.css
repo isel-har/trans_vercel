@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.userStatus{
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1505;
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    bottom: 2px;
+    right: 4px;
+}
+
+.Online{
+    background-color: green;
+}
+
+.Offline{
+    background-color: gray;
+}

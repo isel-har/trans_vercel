@@ -1,0 +1,189 @@
+.leaderboard .main .rowOne{
+    background-color: rgba(13, 17, 23, 1);
+    border-radius: 25px;
+    
+}
+.leaderboard .main .rowTwo{
+    background-color: rgba(13, 17, 23, 1);
+    border-radius: 25px;
+
+}
+
+.leaderboard .main .rowTwo .other_card{
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 195px;
+}
+.leaderboard .main .rowTwo .other_cards{
+
+    width: 150px;
+}
+
+.leaderboard .main .rowOne .title{
+    border: 1px solid white;
+    border-radius: 35px;
+    justify-content: center;
+    gap: 102px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media (width < 2053px) {
+    .leaderboard .main{
+        width: 1353px;
+        gap: 25px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 67px;
+    }
+    .leaderboard .main .rowOne .results .res{
+        gap: 91px;
+    }
+}
+
+@media (width < 1800px) {
+    .leaderboard .main{
+        left: 195px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 67px;
+    }
+    .leaderboard .main .rowOne .results .res{
+        gap: 91px;
+    }
+}
+
+@media (width < 1571px) {
+    .leaderboard .main{
+        width: 1000px;
+    }
+    .leaderboard .main .rowTwo{
+        display: none;
+    }
+    .leaderboard .main .rowOne{
+        width: 100%; 
+    }
+    
+}
+@media (width < 1210px) {
+    .leaderboard .main{
+        width:920px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 77px;
+        /* width: 800px; */
+    }
+    .leaderboard .main .rowOne{
+        gap: 87px;
+        /* width: 800px; */
+    }
+  
+    
+}
+@media (width < 1124px) {
+    .leaderboard .main{
+        left: 155px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 77px;
+        /* width: 800px; */
+    }
+    .leaderboard .main .rowOne{
+        gap: 87px;
+        /* width: 800px; */
+    }
+  
+    
+}
+@media (width < 1091px) {
+    .leaderboard .main{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 263px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 77px;
+        /* width: 800px; */
+    }
+    .leaderboard .main .rowOne{
+        gap: 87px;
+        /* width: 800px; */
+    }
+  
+    
+}
+@media (width <= 964px) {
+    .leaderboard .main{
+        width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 263px;
+    }
+    .leaderboard .main .rowOne .profile_card{
+        left: 0px;
+        top: 0px;
+
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 55px;
+        /* width: 800px; */
+    }
+    .leaderboard .main .rowOne{
+        gap: 5px;
+        /* width: 800px; */
+    }
+ 
+    .leaderboard .main .rowOne .profile_card{
+        display: none;
+        /* width: 800px; */
+    }
+    .leaderboard .main .rowOne .results{
+        width: 100%;
+        /* width: 800px; */
+    }
+ 
+    
+}
+
+@media (width <= 602px) {
+    .leaderboard .main{
+        width: 430px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 31px;
+        /* width: 430px; */
+    }
+    .leaderboard .main .rowOne .results .res{
+        gap: 44px;
+        /* width: 430px; */
+    }
+}
+@media (width <= 450px) {
+    .leaderboard .main{
+        width: 310px;
+    }
+    .leaderboard .main .rowOne .title{
+        gap: 5px;
+        /* width: 430px; */
+    }
+    .leaderboard .main .rowOne .results .res{
+        gap: 26px;
+        /* width: 430px; */
+    }
+}
+
+
+.leaderboard .main .rowOne .results ::-webkit-scrollbar {
+    width: 10px;
+   
+}
+
+.leaderboard .main .rowOne .results ::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+  } 
+   
+  @media ((width >= 1092px) and (height <= 1000px)) {
+    .leaderboard .main{
+        top: 265px;
+    }
+  }

@@ -1,0 +1,29 @@
+## Postgres variables
+POSTGRES_PASSWORD=
+POSTGRES_USER=
+POSTGRES_DB=
+
+## django backend secret key
+SECRET_KEY=
+ 
+## Two factor authentication variables
+EMAIL_HOST=
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+TOTP=
+
+### URLS
+NEXT_PUBLIC_IP=
+BASE_URL=
+
+## DB login
+DB_USER=
+DB_PASSWORD=
+
+# Next API URLs
+NEXT_PUBLIC_API_URL=
+NEXT_PUBLIC_QUERY_URL=
+
+## 42 Intra API keys
+CLIENT_ID=
+CLIENT_SECRET=

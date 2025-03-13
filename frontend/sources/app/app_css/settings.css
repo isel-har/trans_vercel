@@ -1,0 +1,142 @@
+body{
+    min-height: 100vh;
+    max-height: 2000px;
+}
+.settings{
+    background: linear-gradient(338.77deg, #131A25 50.72%, #2E4F78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    gap: 155px;
+    position: relative;
+    z-index: 5;
+
+}
+
+div[role= "alert"]{
+    border-color: hsl(0 84.2% 60.2% / 1);
+    color: hsl(0 84.2% 60.2% / 1);
+    width: 347px;
+    position: absolute;
+    top: -77px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+
+.settings .setting_in{
+    background: rgba(44, 116, 179, 0.1);
+    border: 1px solid rgba(81, 125, 162, 1);
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /* margin-bottom: 15px; */
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.delete{
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.save{
+    border-radius: 7px;
+    color: white;
+    background: rgba(31, 122, 201, 1);
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.wrap{
+    gap: 88px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (width < 801px) {
+    .settings{
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .settings .setts{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .wrap{
+        bottom: 250px;
+        left: 50%;
+      
+    }
+    body{
+        height: 1793px;
+    }
+}
+
+@media (width < 801px) {
+    body .settings{
+        width: 290px;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        /* padding: 0; */
+    }
+    .settings .setts{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+
+    }
+    .settings .setts .image{
+        display: flex;
+        justify-content: center;
+    }
+    .settings .setts .avs{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .two-factor-section {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .two-factor-content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .status-text {
+        color: #374151;
+    }
+    
+    .password-input input {
+        border: 1px solid #e5e7eb;
+        border-radius: 4px;
+        padding: 8px 12px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .toggle-button {
+        transition: all 0.2s ease;
+    }
+    
+    .toggle-button:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}

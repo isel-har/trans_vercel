@@ -1,0 +1,9 @@
+.navs{
+    display: flex;
+    left: 0px;
+}
+
+body header #else{
+    display: flex;
+
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Neue Plak';
+  src: url('/fonts/neue-plak/Neue Plak Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.heading {
+  position: relative;
+  font-family: 'Neue Plak', sans-serif;
+  color: rgb(197, 197, 197);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  bottom : 50px;
+}
+
+.text {
+  font-family: 'Neue Plak', sans-serif;
+}
+
+/*responsivness 3la hsab mobile*/
+
+@media (max-width: 640px) {
+  .gamebox {
+    min-height: 90vh; 
+    padding: 30px 15px;
+    border-radius: 15px;
+  }
+}

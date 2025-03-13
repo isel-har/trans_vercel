@@ -1,0 +1,227 @@
+body #wrapper {
+  /* padding-top: 265px; */
+  flex-direction: flex-col;
+  padding-bottom: 265px;
+}
+main {
+  width: 1520px;
+  height: 700px;
+  background: linear-gradient(528.77deg, #131a25 50.72%, #2e4f78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  position: relative;
+  /* top: 255px; */
+  /* left: 305px; */
+  z-index: 5;
+  padding-top: 75px;
+  padding-left: 75px;
+}
+
+nav {
+  display: flex;
+}
+
+header .else {
+  display: flex;
+}
+
+main .welcome {
+  font-size: 91px;
+  font-weight: 800;
+  color: white;
+  width: 70%;
+}
+
+main .options {
+  width: 70%;
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  bottom: 75px;
+}
+
+main .options .op {
+  /* background-color: red; */
+  width: 200px;
+  height: 170px;
+  border-radius: 27px;
+  /* padding: 25px; */
+  background-image: url("../../public/simo/3-home/joystick.png");
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+main .options .op_one {
+  background-image: url("../../public/simo/3-home/joystick.png");
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .options .op_two {
+  background-image: url("../../public/simo/3-home/leaderboard.png");
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .options .op_three {
+  background-image: url("../../public/simo/3-home/friends.png");
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .options .op_four {
+  background-image: url("../../public/simo/3-home/setting.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 51%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .options .ops {
+  transition: 0.3s;
+}
+
+main .options .ops:hover {
+  transform: scale(1.3);
+}
+main .showProfile {
+  background-color: #13171c;
+  width: 30%;
+  min-height: 507px;
+  right: 25px;
+  top: 33px;
+  position: absolute;
+  border-radius: 35px;
+  border: 1px solid white;
+  /* display: none; */
+  padding-bottom: 25px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+main .showProfile .av {
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+}
+main .showProfile .pr {
+  position: relative;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .showProfile .achivements img {
+  object-fit: cover;
+  width: 100px;
+  height: 200px;
+}
+
+main a {
+  transition: 0.3s;
+}
+
+@media (width < 1830px) {
+  main {
+    width: 1425px;
+  }
+}
+
+@media (width <= 1738px) {
+  main {
+    width: 1225px;
+  }
+  main .showProfile:hover {
+    z-index: 1;
+  }
+  main .sPro {
+    right: 120px;
+  }
+}
+
+@media (width <= 1547px) {
+  main {
+    width: 1025px;
+  }
+
+  main .showProfile {
+    display: none;
+  }
+  main .sPro {
+    top: 105px;
+    right: 68px;
+    bottom: unset;
+  }
+
+  main .welcome {
+    font-size: 75px;
+  }
+}
+
+@media (width <= 1331px) {
+  main {
+    width: 1025px;
+    /* left: 210px; */
+  }
+
+  main .showProfile {
+    display: none;
+  }
+  main .sPro {
+    top: 105px;
+    right: 68px;
+    bottom: unset;
+  }
+
+  main .welcome {
+    font-size: 75px;
+  }
+  main .options {
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+  main .welcome {
+    width: 100%;
+    text-align: center;
+    font-size: 71px;
+  }
+  main .sPro {
+    top: 50%;
+    right: unset;
+    bottom: unset;
+    transform: translate(-50%);
+    left: 50%;
+    /* right: 0; */
+  }
+}
+@media (width <= 1243px) {
+  main {
+    width: 880px;
+  }
+}
+
+@media (width <= 1091px) {
+  main {
+    position: relative;
+    padding: 75px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* min-width: 500px; */
+  }
+}
+
+@media (height <= 1091px) {
+  main {
+    height: 630px;
+    /* top: 151px; */
+  }
+}

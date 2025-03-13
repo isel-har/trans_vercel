@@ -1,0 +1,10 @@
+.usersStatus {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  background-color: #00ff1a;
+  bottom: 5px;
+  right: 4px;
+}

@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColor: #131a25;
+  --secondColor: #517da2;
+  --authColor: #00adb5;
+  --buttonColor: #2c74b3;
+  --formColor: #13171c;
+  --headerColor: #222831;
+}
+
+.Profile {
+  /* width: 1115px; */
+  position: relative;
+  /* padding-top: 265px; */
+
+  /* left: 305px; */
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: 250px 600px;
+  gap: 35px;
+}
+
+.Profile .pDivs {
+  /* background-color: red; */
+  /* width: 100px; */
+  /* height: 100px; */
+  background-color: rgba(19, 23, 28, 1);
+}
+.Profile .Prof {
+  grid-column-start: 1;
+  /* background-color: blue; */
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 250px;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 25px;
+  background: linear-gradient(467.77deg, #131a25 50.72%, #2e4f78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+header .search_icon {
+  display: none;
+}
+.Profile .Achievements {
+  grid-column-start: 3;
+  /* background-color: red; */
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: linear-gradient(467.77deg, #131a25 50.72%, #2e4f78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.4);
+}
+.Profile .Achievements .achiImages {
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: rgba(19, 26, 37, 1);
+  /* padding-top: 15px; */
+  /* padding-bottom: 15px; */
+  height: 130px;
+}
+.Profile .Achievements .achiImages img {
+  object-fit: cover;
+}
+.Profile .Achievements .achiImages .lds {
+  background-image: url("../../public/other/acheiv/1.png");
+  background-size: contain;
+  object-fit: contain;
+}
+.Profile .History {
+  grid-column-start: 1;
+  /* background-color: red; */
+  grid-column-end: 3;
+  /* height: 200px; */
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 600px;
+  border-radius: 25px;
+  background: linear-gradient(467.77deg, #131a25 50.72%, #2e4f78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.4);
+}
+.Profile .both {
+  grid-column-start: 3;
+  /* background-color: rgb(141, 127, 127); */
+  grid-column-end: 6;
+  height: 600px;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+body .Profile .Achievements .achiImages::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  border-radius: 15px;
+}
+
+body .Profile .Achievements .achiImages::-webkit-scrollbar-thumb {
+  background: #517da2;
+}
+.Profile .both .Stats,
+.Friends {
+  /* background-color: #00ADB5; */
+  height: 600px;
+  width: calc(970px / 2);
+  border-radius: 25px;
+  background: linear-gradient(296deg, #131a25 50.72%, #2e4f78 136.06%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.Profile .progress .ac {
+  background: linear-gradient(
+      180deg,
+      rgba(44, 116, 179, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  width: 315px;
+  /* height: 400px;
+    width: calc(655px / 2); */
+}
+
+.Profile
+  .progress
+  .ac
+  [class="h-full w-full flex-1 bg-primary transition-all"] {
+  background: linear-gradient(0deg, #2c74b3, #2c74b3),
+    linear-gradient(
+      180deg,
+      rgba(239, 247, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(32, 44, 59, 0.25) 100%
+    );
+
+  /* width: 215px; */
+  /* height: 400px;
+    width: calc(655px / 2); */
+}
+
+@media (width < 1951px) {
+  .Profile {
+    /* left: 207px; */
+  }
+}
+
+@media (width < 1860px) {
+  .Profile {
+    grid-template-columns: repeat(5, 220px);
+    grid-template-rows: 250px 600px;
+  }
+  .Profile .ava {
+    width: 120px;
+    height: 120px;
+  }
+  .Profile .progress .ac {
+    width: 203px;
+  }
+  .Profile .Achievements .achiImages {
+    overflow-x: scroll;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .Profile .both .Stats .titles {
+    font-size: 15px;
+  }
+}
+@media (width < 1455px) {
+  .Profile {
+    grid-template-columns: repeat(5, 190px);
+    grid-template-rows: 250px 600px;
+  }
+  .Profile .Prof div:first-child {
+    gap: 25px;
+  }
+  .Profile .Prof {
+    padding-left: 15px;
+  }
+}
+
+@media (width < 1325px) {
+  .Profile {
+    grid-template-columns: repeat(5, 190px);
+    grid-template-rows: 250px 600px;
+    display: flex;
+    flex-direction: column;
+    width: 731px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+  }
+  .Profile .Prof div:first-child {
+    gap: 25px;
+  }
+  .Profile .Prof {
+    padding-left: 15px;
+  }
+}
+@media (width < 810px) {
+  .Profile {
+    width: 500px;
+  }
+  .Profile .Prof {
+    height: 333px;
+  }
+  .Profile .Prof div:first-child {
+    flex-direction: column;
+  }
+  .Profile .both {
+    flex-direction: column;
+    height: 1370px;
+  }
+  .Profile .both .Stats,
+  .Friends {
+    height: calc(1370px / 2);
+  }
+}
+
+@media (width < 517px) {
+  .Profile .Prof a {
+    font-size: 12px;
+  }
+  .Profile .pF {
+    flex-direction: column;
+  }
+
+  .Profile {
+    width: 330px;
+  }
+  .Profile .both .Stats,
+  .Friends {
+    width: 100%;
+  }
+  .Profile .History .his,
+  .win,
+  .score {
+    font-size: 11px;
+    /* width: 50px; */
+    /* height: 50px; */
+  }
+  .Profile .History .titles h1 {
+    font-size: 14px;
+    /* width: 50px; */
+    /* height: 50px; */
+  }
+  .Profile .History .his {
+    padding-right: 15px;
+    padding-left: 8px;
+    font-size: 14px;
+    /* width: 50px; */
+    /* height: 50px; */
+  }
+  .win,
+  .score {
+    font-size: 15px;
+    /* width: 50px; */
+    /* height: 50px; */
+  }
+  .win {
+    left: 50%;
+    transform: translateX(+7%);
+  }
+  .Profile .History .his .ava {
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
+}
+.Profile .History .ava {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.Profile .History .his::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  border-radius: 15px;
+}
+.Profile .History .his::-webkit-scrollbar-thumb {
+  background: #517da2;
+}
+
+.tit {
+  border: 1px solid
+    linear-gradient(
+      90deg,
+      rgba(44, 116, 179, 0) -7.79%,
+      #2c74b3 47.15%,
+      rgba(44, 116, 179, 0) 103.25%
+    );
+
+  /* border: 1px solid white; */
+}
+
+.Profile .Friends .fr::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  border-radius: 15px;
+}
+.Profile .Friends .fr::-webkit-scrollbar-thumb {
+  background: #517da2;
+}
