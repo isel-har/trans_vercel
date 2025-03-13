@@ -34,7 +34,6 @@ class BlackListToken:
         if user_tokens is not None:
             found =  token in user_tokens
             if found and raise_exception:
-                # print("ha li glna")
                 raise Exception("blacklisted token")
             return found
 

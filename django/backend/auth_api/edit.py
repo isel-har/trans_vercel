@@ -45,7 +45,7 @@ def broadcast_changes(user, type_=None):
 @BlackListToken.is_blacklisted
 def edit_view(request):
     try:
-        print("zaba!")
+
         attrs = [n in ['username', 'email', 'password'] for n in request.data]
         if any(attrs) == False:
             raise Exception('Invalid form.')
@@ -70,7 +70,6 @@ def edit_view(request):
             is_pass = True
         
         serializer = UserSerializer(data=user_data, instance=user)
-        # print(serializer.data)
         data = UserSerializer(user).data
         serializer.is_valid(raise_exception=True)
         if is_pass:
@@ -96,7 +95,6 @@ def change_avatar(request):
             os.makedirs(file_system_path, exist_ok=True)
 
             uploaded_img = request.FILES.get('avatar')
-            print("uploaded : ",uploaded_img)
             if uploaded_img:
                 img = Image.open(uploaded_img)
                 img_name = f'{str(user.id)}_avatar.{img.format.lower()}'
@@ -115,5 +113,4 @@ def change_avatar(request):
             data = UserSerializer(user).data
             return Response(data, status=200)
     except Exception as e:
-        print("error :", str(e))
         return Response({'success':False, 'detail': 'cannot upload the avatar'}, status=400)

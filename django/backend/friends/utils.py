@@ -64,7 +64,6 @@ def update_friends_list(user_1, user_2):
 #             friendships.delete()
             
 #         # if not notifid:
-#         #     print("hana")
 #         #     raise
 #         # notification = Notification.objects.get(id=notifid)
 #         # if notification.target_id == user.id:

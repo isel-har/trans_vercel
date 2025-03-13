@@ -194,20 +194,19 @@ ENDPOINT = os.getenv('BASE_URL')
 #     'https://127.0.0.1:3000',
 # ]
 
-CORS_ALLOWED_ORIGINS = [
-    'https://localhost:8443',
-    'https://127.0.0.1:8443',
-    # 'https://172.18.0.4:8443',
-    # 'http://127.0.0.1:3000',
-    ENDPOINT,
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'https://localhost:8443',
+#     'https://127.0.0.1:8443',
 
-CORS_ORIGIN_WHITELIST = (
-    'https://localhost:8443',
-    'https://127.0.0.1:8443',
-    'http://127.0.0.1:3000',
-    ENDPOINT,
-)
+#     ENDPOINT,
+# ]
+
+# CORS_ORIGIN_WHITELIST = (
+#     'https://localhost:8443',
+#     'https://127.0.0.1:8443',
+#     'http://127.0.0.1:3000',
+#     ENDPOINT,
+# )
 
 CORS_ORIGIN_ALLOW_ALL = True
 

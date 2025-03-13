@@ -424,7 +424,6 @@ class GameConsumer(AsyncWebsocketConsumer):
 
     async def   no_winner_case(self):
         pass
-        # print("case dial 0!")
 
             
 

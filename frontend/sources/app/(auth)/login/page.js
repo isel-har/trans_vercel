@@ -27,8 +27,7 @@ export default function Login() {
   const { setUser } = useAuth();
 
   const intraURL =`${process.env.NEXT_PUBLIC_API_URL}${process.env.NEXT_PUBLIC_QUERY_URL}`;
-
-  console.log("ha endpoint :", HTTPENDPOINT);
+  
   const handleLogin = async (e) => {
     // e.preventDefault();
 

@@ -58,12 +58,11 @@ def delete_ban(user, to_ban):
 @permission_classes([IsAuthenticated])
 @BlackListToken.is_blacklisted
 def ban_actions(request, user_id):
-    print("ha id a sat : ", user_id)
+
     user = request.user
     try:
         uid = int(user_id)
         if user.id == uid:
-            print("wach hadi ?")
             return Response(data={'error' : 'connot ban yourself.'}, status=400)
         to_ban = get_object_or_404(User, id=uid)
         if request.method == 'POST':
